@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lupyd Blog — Home</title>
+  <meta name="description" content="Lupyd Blog — modern responsive blog with glass UI, theme toggle and animations." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="logo" href="index.html">Lupyd Blog</a>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="navMenu" class="nav-menu" aria-label="Main navigation">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="blogs.html" class="nav-link">Blogs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero" style="background: linear-gradient(135deg,var(--accent),var(--accent-2));">
+      <div class="hero-inner">
+        <h1 class="title">Design-forward blog UI — built for the modern Lupyd-web</h1>
+        <p class="subtitle">Glassmorphism • Dark mode • Smooth interactions • Mobile-first</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="blogs.html">Explore Posts</a>
+          <a class="btn ghost" href="features.html">See Features</a>
+        </div>
+      </div>
+      <div class="hero-decor" aria-hidden="true"></div>
+    </section>
+
+    <section class="section highlight">
+      <div class="grid-3">
+        <div class="feature card">
+          <h3>Fast & Responsive</h3>
+          <p>Mobile-first layout with lazy images and small bundle JS.
+            Lupyd is optimized for speed, loading content, feeds, and messages almost instantly, even on slower networks.
+          </p>
+        </div>
+        <div class="feature card">
+          <h3>Dark / Light</h3>
+          <p>User preference saved with localStorage and accessible toggle.</p>
+        </div>
+        <div class="feature card">
+          <h3>Real-Time-Updates</h3>
+          <p>Lupyd delivers posts, messages, notifications, and community interactions instantly, keeping users always up-to-date.<br>
+            Dynamic updates make social interactions faster, more responsive, and engaging, enhancing overall user satisfaction.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section preview-posts">
+      <h2>Latest Posts</h2>
+      <div id="homePreview" class="blog-grid"></div>
+      <div class="center" style="margin-top:18px;">
+        <a class="btn outline" href="blogs.html">View all posts</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>© 2025 Lupyd Blog — Built with care</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

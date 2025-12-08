@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blogs — Lupyd Blog</title>
+  <meta name="description" content="All blog posts on Lupyd Blog." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="logo" href="index.html">Lupyd Blog</a>
+    </div>
+
+    <button id="hamburger" class="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="navMenu" class="nav-menu" aria-label="Main navigation">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="features.html" class="nav-link">Features</a>
+      <a href="blogs.html" class="nav-link active">Blogs</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">🌙</button>
+  </header>
+
+  <main>
+    <!-- HERO BANNER (uses a local lupyd image) -->
+    <section class="hero small" style="background: url('assets/img/lupyd-hero.jpg') center/cover no-repeat;">
+      <div class="hero-inner">
+        <h1>All Posts</h1>
+        <p class="subtitle">Collection of articles, tips and design notes about Lupyd.</p>
+      </div>
+    </section>
+
+    <!-- POSTS GRID -->
+    <section class="section">
+      <h2>Latest Posts</h2>
+      <div id="blogContainer" class="blog-grid"></div>
+    </section>
+
+    <!-- LUPYD GALLERY -->
+    <section class="section">
+      <h2>Lupyd Gallery</h2>
+      <p class="muted">Screenshots and visuals showing Lupyd's UI, dark mode, and features.</p>
+
+      <div class="gallery-grid" style="margin-top:16px;">
+        <img src="images/lupyd.png" alt="Lupyd UI screenshot 1" />
+        <img src="images/encrypted.png" alt="Lupyd dark mode" />
+        <img src="images/buss.jpeg" alt="Lupyd features" />
+        <img src="images/" alt="Lupyd dashboard" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Post Modal (modal content populated by script.js) -->
+  <div id="postModal" class="overlay hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="popup">
+      <button class="close" id="modalClose" aria-label="Close">×</button>
+      <img id="modalImg" alt="" />
+      <h2 id="modalTitle"></h2>
+      <p id="modalTime" class="muted small"></p>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer class="footer">© 2025 Lupyd Blog</footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
