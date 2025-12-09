@@ -66,7 +66,7 @@
     {
       id: 'post-1',
       title: "Lupyd Supports",
-      img: "images/lupyd.png",
+      img: "https://www.mobulous.com/blog/wp-content/uploads/Social-Media-App-Development-Cost-Features.png",
       content: "Lupyd is a next-generation digital social platform built for speed, privacy, and creativityDesigned with modern users in mind, Lupyd delivers a smooth, powerful experience for sharing, chatting, and exploring content.With advanced encryption and smart performance optimization, Lupyd keeps conversations secure and the app lightning-fast.Lupyd empowers creators and communities with innovative features and a bold, modern design.More than a platform—Lupyd represents a new digital era of connection, expression, and global community.",
       time: "Just now",
       tags: ["design","frontend"]
@@ -74,7 +74,7 @@
     {
       id: 'post-2',
       title: "social updates",
-      img: "images/social m.png",
+      img: "https://www.techindiasoftware.com/blog/wp-content/uploads/2025/12/seo-v2-1-768x375.jpg",
       content: "Lupyd is a modern social media platform built for fast, secure, and meaningful connections.It brings together creators, communities, and conversations in one beautifully designed space.With next-gen privacy features and smooth performance, Lupyd offers a safer, smarter way to share and interact.From chatting to posting to exploring trends, Lupyd makes social media feel fresh, powerful, and user-focused.Lupyd isn’t just another app—it’s the future of social networking, where creativity and connection meet. .",
       time: "10 min ago",
       tags: ["tips","design"]
@@ -82,7 +82,7 @@
     {
       id: 'post-3',
       title: "updated chats",
-      img: "images/encrypted.png",
+      img: "https://www.connect2geek.com/wp-content/uploads/sites/514/2023/08/The-Pros-and-Cons-of-End-To-End-Encryption-to-Protect-Business-Data.jpg",
       content: "Lupyd uses advanced end-to-end encryption to keep every chat private and secure from third-party access.Messages are locked with modern cryptographic protocols, ensuring only the sender and receiver can read them.Even Lupyd’s servers cannot view or decode conversations, protecting users against data leaks and unauthorized access.With security inspired by industry-leading protocols like Signal and MLS, Lupyd gives users a safer, more trustworthy communication experience..",
       time: "1 hour ago",
       tags: ["tutorial","css"]
@@ -90,11 +90,18 @@
     {
       id: 'post-4',
       title: "Accessibility for Modern UI",
-      img: "images/growth.png",
+      img: "https://img.freepik.com/premium-vector/website-development-social-media-post_990172-53.jpg?w=2000",
       content:  "Lupyd is rapidly growing as more users discover its speed, security, and modern social experience.Its seamless design and powerful features have helped it gain strong traction among creators, communities, and everyday users.With rising engagement and expanding global reach, Lupyd is becoming one of the most promising new social platforms.Continuous innovation and user-focused development are driving Lupyd’s steady and sustainable growth.",
       time: "Yesterday",
       tags: ["accessibility","ux"]
-    }
+    },
+    {
+      id: 'post-5',
+      title: "Lupyd performance at present social media",
+    img: "images/dashboard.png",
+  content:" Lupyd’s Rapid Growth Across the Social Media Ecosystem . Lupyd is experiencing strong, consistent momentum across every major performance indicator. The latest analytics dashboard highlights impressive gains in user activity, engagement, and platform reliability—showing that Lupyd is not just growing, but scaling with stability and strength.", 
+time:"2 days ago",
+tags:["performance improvements","js"]},
   ];
 
   // ---------- DOM: render posts in a container ----------
@@ -160,7 +167,7 @@
   function openModal(post){
     if(!modal) return;
     modal.classList.remove('hidden');
-    modal.setAttribute('aria-hidden','false');
+    modal.setAttribute('aria','false');
     document.getElementById('modalImg').src = post.img;
     document.getElementById('modalImg').alt = post.title;
     document.getElementById('modalTitle').textContent = post.title;
