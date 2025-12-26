@@ -1,0 +1,1 @@
+import { blogs } from "../data/blogs"; import BlogCard from "../components/BlogCard"; export default function BlogList() { return ( <div className="container"> <h2>LUPYD Blogs</h2> <p>Security • Growth • Performance</p> <div className="blog-grid"> {blogs.length === 0 && <p>No blogs found</p>} {blogs.map(blog => ( <BlogCard key={blog.id} blog={blog} /> ))} </div> </div> ); }
